@@ -90,12 +90,12 @@ body{
 }
 .text{
     margin: 150px 0 0 350px;
-    font-size: 3em;
+    font-size: 72px;
     color: rgb(255, 255, 255);
 }
 .wri{
-    margin: 0 0 0 950px;
-    font-size: 2em;
+    margin-left: 830px;
+    font-size: 46px;
 }
 .bear{
     position: relative;
