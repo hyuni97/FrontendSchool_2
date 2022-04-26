@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Noto+Sans+KR:wght@500;700&display=swap');
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    background-color: #EAE8FE;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+.header{
+    text-align: center;
+    margin-bottom: 43px;
+}
+.machine{
+    background-color: #fff;
+    width: 360px;
+    padding: 31px 27px 28px;
+}
+.list-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 20px;
+    gap: 12px;
+}
+.btn-item{
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.btn-item .img-item{
+    margin: 11px 0 6px;
+}
+.title{
+    font-size: 9px;
+    display: block;
+}
+.btn-item .money{
+    background-color: #6327FE;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 7px 12px 9px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+.Mychange{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px 12px;
+}
+.Mychange .info, .input-money{
+    grid-column: 1 / 3;
+    line-height: 33px;
+}
+.button-input{
+    line-height: 33px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 13px;
+}
+.Mychange .info{
+    background-color: #EAE8FE;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 33px;
+    padding-left: 10px;
+}
+.Mychange .info::after{
+    content: '1,000원';
+    margin-left: 90px;
+}
+.Mychange .change{
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    text-align: center;
+    line-height: 33px;
+}
+.Mychange .input-money{
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 6px;
+}
+.display{
+    grid-column: 1 / 3;
+    height: 106px;
+    background-color: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 12px 18px 0 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.display::-webkit-scrollbar{
+    width: 4px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.pic-drink, .result-drink{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 6px 8px 7px 10px;
+    display: inline-block;
+}
+.pic-drink .img-item, .result-drink .img-item{
+    display: block;
+    width: 18px;
+    height: 33px;
+    float: left;
+}
+.pic-drink .title, .result-drink .title{
+    float: left;
+    line-height: 33px;
+    margin-left: 10px;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20.27px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    float: right;
+    align-items:center;
+    border-radius: 5px;
+}
+.display section:nth-child(2){
+    margin-top: 6px;
+}
+.button_get{
+    width: 94px;
+    background-color: #6327FE;
+    border-radius: 5px;
+}
+.My-info{
+    width: 360px;
+}
+.content{
+    background-color: #fff;
+    padding: 9px 27px 9px;
+}
+.content .My-money{
+    background-color: #EAE8FE;
+    width: 306px;
+    border-radius: 5px;
+    padding: 6px 10px 6px;
+}
+.content .My-money::after{
+    content: '25,000원';
+    margin-left: 152px;
+}
+.cont-result{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 25px 27px 26px 27px;
+}
+.pic-title{
+    font-size: 14px;
+    line-height: 20.27px;
+    text-align: center;
+    display: block;
+}
+.cont-result .Myresult{
+    display: inline-block;
+    background-color: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    width: 306px;
+    height: 364px;
+    padding: 12px 18px 0 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Myresult::-webkit-scrollbar{
+    background-color: #fff;
+    border-radius: 50px;
+    width: 4px;
+}
+.result-drink:nth-child(1){
+    margin-bottom: 6px;
+}
+.total{
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    line-height: 18px;
+    margin-top: 6px;
+}
+@media screen and (max-width:400px) {
+    .My-info {
+
+    }
+}
