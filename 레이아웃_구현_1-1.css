@@ -1,0 +1,408 @@
+body, main, h1, nav, a, section, article, ul, li, img, strong, span, button, footer, header, p{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* 전체 화면 */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.entire{
+    background-color: #F2F2F2;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    padding: 41px 28px 31px;
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 650px;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 37px;
+    border-bottom: 2px solid #BDBDBD;
+}
+.movie-list{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin: 28px 0 28px;
+    text-align: center;
+}
+a.expected{
+    margin: 0 60px 0;
+}
+a{
+    color: #828282;
+}
+a:hover{
+    color: #000000;
+    font-weight: 900;
+}
+/* 영화 목록 설정 */
+.now-movie{
+    background-color: #fff;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 26px 27px 30px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+li{
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 220px;
+}
+.detail{
+    margin: 19px 20px 18px;
+}
+.title{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 900;
+    display: block;
+    margin: 12px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.summary, .date, .hero{
+    color: #828282;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-right: 83px;
+}
+.date{
+    color: #828282;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-right: 150px;
+}
+.summary.one::after{
+    content: '판타지';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.two::after{
+    content: '스릴러';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.three::after{
+    content: '드라마';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.four::after{
+    content: '로맨스';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.five::after{
+    content: '드라마';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.six::after{
+    content: '드라마';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.seven::after{
+    content: '판타지 액션';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.summary.eight::after{
+    content: '로맨스';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.score{
+    color: #828282;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    padding-right: 35px;
+    background-image: url(별점이미지.png);
+    background-repeat: no-repeat;
+    background-position: 27px 0;
+}
+.score.one::after{
+    content: '9.05';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.two::after{
+    content: '8.25';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.three::after{
+    content: '8.77';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.four::after{
+    content: '8.81';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.five::after{
+    content: '9.88';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.six::after{
+    content: '9.25';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.seven::after{
+    content: '8.56';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.score.eight::after{
+    content: '9.02';
+    position: absolute;
+    color: #000000;
+    margin-left: 16px;
+}
+.date.one::after{
+    content: '2021.03.27';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.two::after{
+    content: '2021.04.01';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.three::after{
+    content: '2021.04.12';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.four::after{
+    content: '2021.04.08';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.five::after{
+    content: '2021.04.15';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.six::after{
+    content: '2021.04.17';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.seven::after{
+    content: '2021.04.05';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.date.eight::after{
+    content: '2021.04.18';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.one::after{
+    content: '라이캣,소울곰,개리씨';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.two::after{
+    content: '자바독,개리씨,빙키';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.three::after{
+    content: '캣,파이,썬,뮤라';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.four::after{
+    content: '파이썬,큐티';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.five::after{
+    content: 'NGINX,노션';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.six::after{
+    content: '라이캣,자바독,소울곰';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.seven::after{
+    content: '개리씨,파이썬';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+.hero.eight::after{
+    content: '라이캣,개리씨,자바독';
+    position: absolute;
+    color: #000000;
+    margin-left: 5px;
+}
+li{
+    position: relative;
+    padding-bottom: 40px;
+}
+button{
+    border: none;
+}
+.button{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    width: 107px;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #BDBDBD;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 12px;
+    line-height: 42px;
+    border-right: 1px solid #BDBDBD;
+}
+.trailer{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    width: 113px;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #BDBDBD;
+    background-color: #F2F2F2;
+    border-bottom-right-radius: 12px;
+    line-height: 42px;
+}
+/* 이미지 사진  */
+.img-item{
+    width: 180px;
+    border-radius: 10px;
+}
+.trailer img{
+    width: 16px;
+    vertical-align: middle;
+}
+/* footer */
+footer{
+    bottom: 0;
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 135px;
+}
+.top{
+    border-bottom: 1px solid #C4C4C4;
+}
+.information{
+    width: 1176px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.company{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 217px;
+    padding: 53px 0 41px;
+}
+.information img{
+    width: 24px;
+}
+.web-pic{
+    display: inline-block;
+    float: right;
+    margin-top: 54px;
+}
+.web-pic img:nth-child(2){
+    margin: 0 22px 0;
+}
+.information-detail{
+    margin: 36px 0 38px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.company-name, .CEO, .Business, .video, .adress, .logo{
+    display: inline-block;
+}
+.CEO, .Business, .video, .adress::before{
+    content: '';
+    border-left: 2px solid #BDBDBD;
+    margin-right: 5px;
+}
+.CEO::after{
+    content: '라이언';
+    font-weight: 400;
+}
+.Business::after{
+    content: '000-0000-0000';
+    font-weight: 400;
+}
+.adress::after{
+    font-weight: 400;
+    content: '서울특별시';
+}
+.logo{
+    float: right;
+}
