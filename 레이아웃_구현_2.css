@@ -1,0 +1,232 @@
+body, main, h1, nav, a, section, article, ul, li, img, strong, span, button, footer, header, p, dl,dt, dd{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* 전체 화면 */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.entire{
+    background-color: #F2F2F2;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    padding: 41px 28px 31px;
+    max-width: 1060px;
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 650px;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 37px;
+    border-bottom: 2px solid #BDBDBD;
+}
+.header, .movie
+.movie-list{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin: 28px 0 28px;
+    text-align: center;
+}
+.movie-list a.now{
+    color: #000000;
+    font-weight: 900;
+}
+a.expected{
+    margin: 0 60px 0;
+}
+.movie-list a{
+    color: #828282;
+}
+.movie-list a:hover{
+    color: #000000;
+    font-weight: 900;
+}
+.now-movie{
+    background-color: #fff;
+    border: 2px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    padding: 26px 27px 30px;
+}
+li{
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 220px;
+}
+article.detail{
+    margin: 19px 20px 18px;
+    font-size: 13px;
+    font-weight: 400;
+}
+strong.title{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 11px 0 12px;
+}
+.date, .hero{
+    display: block;
+    clear: both;
+}
+.score{
+    margin-left: 35px;
+}
+li:nth-child(7) > article > span.score{
+    margin-left: 10px;
+}
+.summary::before{
+    content: '개요';
+    margin-right: 5px;
+    color: #828282;
+    font-size: 13px;
+    font-weight: 400;
+}
+.score::before{
+    content: '평점';
+    padding-right: 23px;
+    color: #828282;
+    font-size: 13px;
+    font-weight: 400;
+    background-image: url(별점이미지.png);
+    background-repeat: no-repeat;
+    background-position: 30px 2px;
+}
+.date::before{
+    content: '개봉';
+    margin-right: 5px;
+    color: #828282;
+    font-size: 13px;
+    font-weight: 400;
+}
+.hero::before{
+    content: '출연';
+    margin-right: 5px;
+    color: #828282;
+    font-size: 13px;
+    font-weight: 400;
+}
+.trailer{
+    float: right;
+    border-left: 1px solid #BDBDBD;
+    border-bottom-right-radius: 9px;
+}
+.trailer::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(icon_start.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+} 
+.button{
+    border-bottom-left-radius: 9px;
+}
+button{
+    width: 50%;
+    border: none;
+    line-height: 42px;
+    border-top: 1px solid #BDBDBD;
+}
+/* 이미지 사진  */
+.img-item{
+    width: 180px;
+    height: 250px;
+    border: 10px;
+}
+.web-pic a img{
+    width: 24px;
+}
+/* footer마지막 부분 */
+footer{
+    background-color: #F2F2F2;
+    margin-top: 135px;
+}
+.information{
+    width: 1189px;
+    margin: 0 auto;
+}
+.top{
+    border-bottom: 1px solid #c4c4c4;
+    padding: 53px 0 42px;
+}
+.company{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700px;
+    display: inline-block;
+}
+.web-pic{
+    display: inline-block;
+    margin-left: 918px;
+}
+.web-pic a:nth-child(2){
+    margin: 0 21px 0;
+}
+.web-pic a img:hover{
+    border: 1px solid rgb(39, 76, 240);
+    border-radius: 5px;
+}
+.information-detail{
+    display: inline-block;
+}
+dl, dt, dd{
+    display: inline-block;
+    font-size: 14px;
+}
+dt, .company-full{
+    font-weight: 700;
+}
+dd{
+    font-weight: 400;
+}
+.company-full, .video-name{
+    margin-left: -30px;
+}
+.company-name, .video{
+    visibility: hidden;
+}
+.logo{
+    float: right;
+    color: #4F4F4F;
+    font-size: 14px;
+    font-weight: 700;
+}
+.company-full, .CEO-name, .Business, .video-name{
+    border-right: 2px solid #BDBDBD;
+    padding-right: 7px;
+    margin-right: 5px;
+}
+.bottom{
+    padding: 36px 0 38px;
+}
