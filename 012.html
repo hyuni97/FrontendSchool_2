@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- <ul></ul>
+    <button>Make me MORE!</button> -->
+    <p></p>
+    <input type="text">
+    <button>Write Something!</button>
+    <strong class="sayHi">
+        반갑습니다.
+    </strong>
+    <script>
+        // const myBtn = document.querySelector("button");
+        // const myUl = document.querySelector("ul");
+
+        // myBtn.addEventListener('click', function(){
+	    //     for(let i=0; i < 5; i++){
+		// const myLi = document.createElement('li');
+		// myUl.appendChild(myLi);
+        //     }
+        // })
+
+        const myBtn = document.querySelector("button");
+        const myP = document.querySelector("p");
+        const myInput = document.querySelector("input");
+        
+        myBtn.addEventListener('click', function(){
+        	myP.textContent = myInput.value;
+        });
+
+        myInput.addEventListener('input', ()=>{
+        myP.textContent = myInput.value;
+    });
+
+    // jsx
+const sayHi = document.querySelector('.sayHi');
+sayHi.insertAdjacentHTML('beforebegin', '<span>안녕하세요 저는</span>');
+sayHi.insertAdjacentHTML('afterbegin', '<span>재현입니다</span>');
+sayHi.insertAdjacentHTML('beforeend', '<span>면접오시면</span>');
+sayHi.insertAdjacentHTML('afterend', '<span>치킨사드릴게요</span>');
+```
+    </script>
+</body>
+</html>
