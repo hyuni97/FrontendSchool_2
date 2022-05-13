@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+body{
+    background-color: #5B2386;
+}
+header .title-txt{
+    background-image: url(../img/clock.png), url(../img/title.png);
+    background-repeat: no-repeat;
+    background-size: 261px , 564px;
+    background-position: center;
+    width: 700px;
+    height: 300px;
+    margin: 199px auto 0;
+    text-indent:-9999px;
+}
+.first-cheer{
+    font-family: 'OTEnjoystoriesBA';
+    font-weight: 700;
+    font-size: 36px;
+    color: #F5DF4D;
+    text-align: center;
+}
+.detail-txt{
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
+    color: #fff;
+    margin: 78px auto 102px;
+    text-align: center;
+}
+.detail-txt strong{
+    font-family: 'GmarketSansBold';
+}
+.question{
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    background-color: #FCEE21;
+    color: #5B2386;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    padding: 21px 49px;
+    display: block;
+    margin: 115px auto;
+}
+form{
+    color: #fff;
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    text-align: center;
+}
+.decision{
+    display: block;
+    margin-bottom: 30px;
+}
+.sectors{
+    height: 50px;
+}
+.time{
+    width: 150px;
+    height: 50px;
+}
+.sectors, .time{
+    text-align: center;
+    font-size: 24px;
+    scroll-snap-type: hidden;
+    border-radius: 7px;
+}
+.question::after{
+    content: url(../img/click.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 60px;
+    position: absolute;
+}
+.cheer-txt{
+    display: none;
+}
+.question.on{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+.only-txt{
+    margin-bottom: 127px;
+    font-size: 24px;
+    font-family: 'GmarketSansMedium';
+}
+.go{
+    background-color: #FCEE21;
+    color: #5B2386;
+    padding: 21px 49px;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+}
+.share{
+    color: #5B2386;
+    padding: 21px 49px;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.modal-screen{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    max-width: 942px;
+    padding: 76px 146px 68px;
+    position: absolute;
+    margin: -800px 0 0 550px;
+}
+.modal-screen h2, .modal-screen p{
+    font-family: 'OTEnjoystoriesBA';
+    text-align: center;
+    color: #5B2386;
+}
+.modal-screen h2{
+    font-size: 96px;
+}
+.modal-screen p{
+    font-size: 36px;
+}
+.modal-screen img{
+    display: block;
+    margin: 9px auto;
+}
+.modal-screen button{
+    font-family: 'GmarketSansBold';
+    color: #5B2386;
+    background-color: #FCEE21;
+    font-size: 24px;
+    border-radius: 56px;
+    padding: 21px 49px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 74px auto 0;
+    display: block;
+}
+footer{
+    text-align: center;
+    color: #fff;
+}
+footer img{
+    margin: 130px 0 20px;
+}
