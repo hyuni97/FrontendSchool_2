@@ -19,7 +19,7 @@ const txtMin = document.querySelector(".minute")
             window.alert("하루는 24시간이다");
             console.log("하루는 24시간이다");
         }else{
-            let result = 10000/txtTime.value;
+            let result = Math.round(10000/txtTime.value);
             txtJob.textContent = txtSecto.value;
             txtMin.textContent = result;
             txtCheer.classList.toggle("on");
