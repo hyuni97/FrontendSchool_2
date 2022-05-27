@@ -38,7 +38,7 @@
         console.log(x/y);
         console.log(x*y);
         console.log(x**y);
-        console.log(x%y);
+        console.log(x%y);    // 나머지
         //5.2 비교연산
         console.log(x>y);
         console.log(x>=y);
@@ -91,7 +91,7 @@
 
         //9 객체(Object)
         x = {one:1, two:2, three:3}
-        // key:value의 쌍으로 이뤄집니ㅏㄷ.
+        // key:value의 쌍으로 이뤄집니다.
         console.log(typeof x);
         console.log(x.one);
         console.log(x['one']);
@@ -122,7 +122,7 @@
         let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         arr.filter(i => i > 3); // 원본 수정 아님
         arr.map(x => x**2);
-        arr.forEach(i => console.log(i+1));
+        arr.forEach(i => console.log(i+1));   //forEach -> 반복문을 추상화한 고차 함수,호출한 배열을 순회 후 콜백함수로 반복 호출로 처리한다.
     </script>
 </body>
 </html>
