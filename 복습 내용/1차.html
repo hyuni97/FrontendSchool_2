@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        /* reset */
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        /* setting */
+        
+        /* design */
+        body{
+            background-color: blueviolet;
+        }
+        .person{
+            position: relative;
+            top: 100px;
+            margin: 50px auto;
+            width: 500px;
+            height: 500px;
+            
+        }
+        .person .face{
+            position: absolute;
+            left: 80px;
+            width: 320px;
+            height: 350px;
+            bottom: 0;
+            background-color: rgb(251, 206, 177);
+            border: 5px solid brown;
+            border-radius: 38% 54% 50% 43% / 47% 41% 50% 45% ;
+            box-shadow: 50px 50px gray;
+        }
+        .person .eye{
+            position: absolute;
+            bottom: 130px;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50px ;
+        }
+        .eye.left{
+            left:55px;
+        }
+        .eye.right{
+            right: 55px;
+        }
+        .person .eyebrow{
+            position: absolute;
+            top: 140px;
+            width: 60px;
+            height: 10px;
+            background-color: brown;
+            border-radius: 30px;
+        }
+        .eyebrow.left{
+            left: 45px;
+            transform: rotate(20deg);
+        }
+        .eyebrow.right{
+            right: 45px;
+            transform: rotate(-20deg);
+        }
+        .mouth{
+            position: absolute;
+            width: 50px;
+            height: 40px;
+            bottom: 50px;
+            left: 130px;
+            background-color: red;
+        }
+        .sun{
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            top: 10px;
+            left: -80px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 37% 56%, 2% 35%, 39% 35%);
+            transform: rotate(35deg);
+            background-color: orangered;
+            z-index: -1;
+        }
+        .sunny {
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            top: 10px;
+            left: -80px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 37% 56%, 2% 35%, 39% 35%);
+            background-color: orangered;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>구운 감자</h1>
+    <div class="person">
+        <div class="face">
+            <div class="eyebrow left"></div>
+            <div class="eyebrow right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="sun"></div>
+        <div class="sunny"></div>
+    </div>
+</body>
+</html>

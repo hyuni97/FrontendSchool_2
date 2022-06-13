@@ -1,0 +1,285 @@
+/* reset */
+body, p{
+    margin: 0;
+    padding: 0;
+}
+/* animaion */
+@-webkit-keyframes 볼왼쪽{
+    from {
+            margin-left: 10px;
+    }
+    to {
+            margin-left: 0;
+    }
+}
+@keyframes 볼왼쪽{
+    from {
+            margin-left: 10px;
+    }
+    to {
+            margin-left: 0;
+    }
+}
+@-webkit-keyframes 볼오른쪽{
+    from{
+        margin-right: 10px;
+    }
+    to{
+        margin-right: 0;
+    }
+}
+@keyframes 볼오른쪽{
+    from{
+        margin-right: 10px;
+    }
+    to{
+        margin-right: 0;
+    }
+}
+
+@-webkit-keyframes 귀왼쪽{
+    from{
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+    to{
+        -webkit-transform: rotate(40deg) translate(10deg);
+                transform: rotate(40deg) translate(10deg);
+    }
+}
+
+@keyframes 귀왼쪽{
+    from{
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+    to{
+        -webkit-transform: rotate(40deg) translate(10deg);
+                transform: rotate(40deg) translate(10deg);
+    }
+}
+@-webkit-keyframes 귀오른쪽{
+    from{
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+    to{
+        -webkit-transform: rotate(-40deg) translate(-10deg);
+                transform: rotate(-40deg) translate(-10deg);
+    }    
+}
+@keyframes 귀오른쪽{
+    from{
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+    to{
+        -webkit-transform: rotate(-40deg) translate(-10deg);
+                transform: rotate(-40deg) translate(-10deg);
+    }    
+}
+
+@font-face {
+    font-family: 'Beau Rivage', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+}
+/* design */
+body{
+    background-color: rgb(187, 128, 243);
+    font-family: 'Beau Rivage', cursive;
+}
+.text{
+    margin: 150px 0 0 350px;
+    font-size: 72px;
+    color: rgb(255, 255, 255);
+}
+.wri{
+    margin-left: 830px;
+    font-size: 46px;
+}
+.bear{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 0 0 800px;
+}
+.ear{
+    position: absolute;
+    width: 125px;
+    height: 130px;
+    top: 70px;
+    background-color: rgb(122, 45, 25);
+}
+.ear.left{
+    left: 30px;
+    -webkit-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+    border-radius: 50%;
+    -webkit-animation: 귀왼쪽 1s infinite alternate;
+            animation: 귀왼쪽 1s infinite alternate;
+}
+.ear.left::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: rgb(251, 206, 177);
+}
+.ear.right{
+    right: 30px;
+    -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+            transform: rotate(25deg);
+    border-radius: 50%;
+    -webkit-animation: 귀오른쪽 1s infinite alternate;
+            animation: 귀오른쪽 1s infinite alternate;
+}
+.ear.right::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    right: 25px;
+    border-radius: 50%;
+    background-color: rgb(251, 206, 177);
+}
+.face{
+    position: absolute;
+    width: 350px;
+    height: 265px;
+    margin:120px 25px 30px;
+    background-color: rgb(116, 41, 19);
+    border-top-left-radius: 56%;
+    border-top-right-radius: 57%;
+    border-bottom-left-radius: 38%;
+    border-bottom-right-radius: 35%;
+}
+.face .eye{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 55px;
+}
+.eye.left{
+    left: 50px;
+}
+.eye.right{
+    right: 50px;
+}
+.face .cheek{
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    bottom: 65px;
+    background-color: rgb(255, 192, 203);
+    border-radius: 40%;
+}
+.cheek.left{
+    left: 10px;
+    -webkit-animation: 볼왼쪽 1s infinite alternate;
+            animation: 볼왼쪽 1s infinite alternate;
+}
+.cheek.left::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1px;
+    top: 8px;
+    left: 20px;
+    border-top: 20px solid rgb(255 0 0);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+}
+.cheek.left::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1px;
+    top: 8px;
+    left: 40px;
+    border-top: 20px solid rgb(255 0 0);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+}
+.cheek.right{
+    right: 10px;
+    -webkit-animation: 볼오른쪽 1s infinite alternate;
+            animation: 볼오른쪽 1s infinite alternate;
+}
+.cheek.right::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1px;
+    top: 8px;
+    right: 20px;
+    border-top: 20px solid rgb(255 0 0);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+}
+.cheek.right::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1px;
+    top: 8px;
+    right: 40px;
+    border-top: 20px solid rgb(255 0 0);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+}
+.face .mouth{
+    position: absolute;
+    bottom: 7px;
+    left: 85px;
+    width: 180px;
+    height: 150px;
+    background-color: rgb(251, 206, 177);
+    border-radius: 50%;
+}
+.mouth .nose{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    width: 80px;
+    height: 60px;
+    background-color: rgb(32, 30, 30);
+    border-radius: 35px;
+    z-index: 10;
+}
+.mouth::before{
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 20px;
+    width: 140px;
+    height: 42px;
+    background-color: rgb(251, 206, 177);
+    z-index: 10;
+}
+.mouth .lips{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    background-color: rgb(251, 206, 177);
+    border: 5px solid rgb(32, 30, 30);
+    border-radius: 50%;
+}
+.lips.left{
+    left: 23px;
+}
+.lips.right{
+    right: 23px;
+}

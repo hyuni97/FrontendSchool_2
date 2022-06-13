@@ -1,0 +1,42 @@
+body, h1{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(나뭇잎.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.first, .second{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.text, h1{
+    text-align: center;
+}
+h1{
+    font-size: 8em;
+    padding-top: 150px;
+}
+caption{
+    font-weight: bold;
+    font-size: 2em;
+}
+tbody{
+    font-size: 1.5em;
+}
+
+.month{
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(12, 68, 12);
+    border-radius: 57% 54% 100% 0% / 100% 55% 57% 1% 
+}
+.text{
+    font-style: italic;
+}

@@ -1,0 +1,130 @@
+body, p{
+    margin: 0;
+    padding: 0;
+}
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+* {
+    font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif;
+    font-size: 16px;
+}
+body{
+    margin: 50px 0 0 100px;
+    background-color: #c4c4c4;
+}
+article{
+    width: 520px;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 10px;
+}
+.header{
+    height: 20px;
+    text-align: right;
+    margin-top: 20px;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 20px;
+
+}
+.header::after{
+    content: url(close.svg);
+    vertical-align: middle;
+    margin: 0 24px 0 148px;
+}
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 26px 0 24px 24px;
+}
+.main.web{
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+input[id="myName"]{
+    width: 472px;
+    padding: 15px 0 15px;
+    margin-left: 24px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+}
+input[id="PW"]{
+    width: 472px;
+    padding: 15px 0 15px;
+    margin: 10px 0 0 24px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+}
+input[id="chkbox"] {
+    display: none;
+}
+input[id="chkbox"] + label span{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 16px 8px 0 27px;
+    background: url(check-box.svg) 0 0 no-repeat;
+    vertical-align: sub;
+    cursor: pointer;
+}
+input[id="chkbox"]:checked + label span {
+    background: url(checked.svg);
+    -webkit-transition: all ease 0.3s 0s;
+    -o-transition: all ease 0.3s 0s;
+    transition: all ease 0.3s 0s;
+}
+.main .button{
+    background-color: #2F80ED;
+    width: 472px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 14px 0 14px;
+    margin: 20px 0 0 24px;
+    font-size: 18px;
+}
+a.web{
+    width: 472px;
+    display:block;
+    text-decoration:none;
+    color:black;
+    border:1px solid #767676;
+    border-radius:10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding:15px 0 15px 12px;
+    margin:10px 0 0 24px;
+    }
+.web.web4{
+    margin-bottom: 25px;
+}
+
+a.web1::before{
+    content:url(Google__G__Logo\ 1.svg);
+    margin-right: 138px;
+    vertical-align: middle;
+}
+a.web2::before{
+    content:url(facebook.svg);
+    margin-right: 123px;
+    vertical-align: middle;
+}
+a.web3::before{
+    content:url(naver-logo.svg);
+    margin-right: 131px;
+    vertical-align: middle;
+}
+a.web4::before{
+    content:url(message-circle.svg);
+    margin-right: 123px;
+    vertical-align: middle;
+}
